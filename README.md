@@ -1,7 +1,7 @@
 # assessment
 **Tasks**
 
-The task in this repository is to buid two models that wil be trained on the image data and learn to classify it. One model will perform binary classification to detect whether a tumour is present in the brain scan images and the chosen model is logistic regression. The other model is a KNN model designed to perform multiclass classification.
+The task in this repository is to build two models that wil be trained on the image data and learn to classify it. One model will perform binary classification to detect whether a tumour is present (output of 0 or 1) in the brain scan images and the chosen model is logistic regression. The other model is a KNN model designed to perform multiclass classification of tumours; its output is 0-3 for the 4 classes.
 
 **Role of each file and file organisation**
 
@@ -9,11 +9,11 @@ Each model has its own Jupyter Notebook file. The binary classification model is
 
 The directory called dataset contains:
 
-- the file sample_;labels_0_1.csv (image file names with binary labels)
-- the sample_labels_updated (image file names with multiclass labels)
-- the subdirectory called sample_images, with all the image files.
+- the file sample_labels_0_1.csv (image file names with binary labels)
+- the file sample_labels_updated.csv (image file names with multiclass labels)
+- the subdirectory called sample_images, with all the image files for training.
 
-The directory called test contaiins:
+The directory called test contains the same files, but for testing:
 
 - the file labels_0_1.csv (image file names with binary labels)
 - the file label.csv (image file names with multiclass labels)
